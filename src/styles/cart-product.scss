@@ -1,0 +1,38 @@
+.cart-product {
+  display: grid;
+  grid-template-columns: 8rem 4fr 1fr;
+  padding: 5px;
+
+  &__info {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__name,
+  &__amount {
+    font-size: 1.4rem;
+  }
+
+  &__price {
+    font-size: 1.6rem;
+    color: var(--red);
+    font-weight: 600;
+  }
+
+  &__remove-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__remove-btn {
+    color: var(--red);
+
+    .icon {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+}

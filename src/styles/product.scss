@@ -1,0 +1,70 @@
+.product {
+  padding: 2rem;
+  text-align: center;
+
+  img {
+    display: block;
+    margin: 0 auto;
+
+    @media (max-width: 500px) {
+      height: 300px;
+    }
+  }
+
+  &__info {
+    padding: 1rem;
+  }
+
+  &__name {
+    font-size: 1.8rem;
+    height: 50px;
+    overflow: hidden;
+  }
+
+  &__price {
+    font-size: 3rem;
+    padding: 5px 0;
+    font-weight: 600;
+    color: var(--red);
+  }
+
+  &__sold-out-box {
+    border: 2px solid var(--red);
+    max-width: 26rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+
+  &__sold-out-text {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: var(--red);
+    font-weight: 600;
+  }
+
+  &__button {
+    max-width: 26rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem 5px;
+    font-size: 1.8rem;
+    margin: 0 auto;
+    background: var(--green);
+    color: #fff;
+    transition: background .2s;
+
+    &:hover {
+      background: var(--greenDarker);
+    }
+
+    .icon {
+      margin-left: 1rem;
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+}
